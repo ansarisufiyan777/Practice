@@ -9,7 +9,7 @@ import java.util.HashMap;
  * 
  * 
  * */
-public class pattern7 {
+public class Pattern7 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -33,40 +33,7 @@ public class pattern7 {
 	 * 
 	 * */
 
-	/*
-	
-		Starwidow = 0
-		endwindow =0
-		
-		hashmap =key-> character
-				value -> no of occrence
-		
-		maxoccrence in currenct window sofar -> maxletter
-		
-		algorithm:
-		start = 0
-		end =3
-		maxletter =0->1->2
-		window = [a,a,b,c] 
-		hasmap{
-		 a-> 2
-		 b-> 1
-		 c-> 1
-		}
-		
-		start sinking window once it has length of is equal to k
-		
-		  end -start - maxletter >= k
-		  3-0-2>=k
-		  1>=2
-		  
-		
-		aabccbb
 
-
-
-	*/
-	
 	private static int logest_substring_of_sameletter_k_replace(String str, int k) {
 
 		int starWindow = 0;
