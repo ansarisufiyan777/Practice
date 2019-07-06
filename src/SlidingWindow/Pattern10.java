@@ -32,7 +32,7 @@ Try it yourself
  * 
  * 
  * */
-public class Pattern11 {
+public class Pattern10 {
 	
 	public static List<Integer> findAllAnanaGram(String str, String pattern){
 		List<Integer> list = new ArrayList<Integer>();
@@ -69,7 +69,6 @@ public class Pattern11 {
 	public static void main(String[] args) {
 		System.out.println(findAllAnanaGram("ppqp","pq"));
 		System.out.println(findAllAnanaGram("abbcabc","abc"));
-
 	}
 
 }
