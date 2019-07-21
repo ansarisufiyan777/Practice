@@ -9,6 +9,18 @@ import java.util.HashMap;
  * 
  * 
  * */
+/*
+ * We iterate through string char by char
+ * we are going use dynamic sliding window pattern where widow has staring and ending
+ * dynamic because window can grow or sink
+ * 
+ * we will create a hashMAP we use this hashMAP to map char and it's index
+ * once hashMAP size reach k+1 we start sink it
+ * 
+ * and also keep track of maximum repeating letter
+ * 
+ * 
+ * */
 public class Pattern7 {
 
 	public static void main(String[] args) {
@@ -19,19 +31,6 @@ public class Pattern7 {
 		System.out.println("logest substring of same letter after k replace: "+logest_substring_of_sameletter_k_replace("abccde", 1));
 
 	}
-
-	/*
-	 * We iterate through string char by char
-	 * we are going use dynamic sliding window pattern where widow has staring and ending
-	 * dynamic because window can grow or sink
-	 * 
-	 * we will create a hashMAP we use this hashMAP to map char and it's index
-	 * once hashMAP size reach k+1 we start sink it
-	 * 
-	 * and also keep track of maximum repeating letter
-	 * 
-	 * 
-	 * */
 
 
 	private static int logest_substring_of_sameletter_k_replace(String str, int k) {
@@ -52,9 +51,7 @@ public class Pattern7 {
 			maxlength = Math.max(maxlength, endWindow-starWindow+1);
 		}
 
-
 		return maxlength;
-
 	}
 
 }
