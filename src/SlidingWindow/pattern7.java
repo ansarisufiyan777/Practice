@@ -3,7 +3,7 @@ package SlidingWindow;
 import java.util.HashMap;
 
 /*   
- * Given a string with lowercase letters only, if you are allowed to replace no more than ‘k’
+ * Given a string with lower case letters only, if you are allowed to replace no more than ‘k’
  *  letters with any letter, find the length of the longest substring having the same letters after replacement.
  * 
  * 
@@ -23,10 +23,10 @@ public class Pattern7 {
 	/*
 	 * We iterate through string char by char
 	 * we are going use dynamic sliding window pattern where widow has staring and ending
-	 * dynamic becase window can grow or slink
+	 * dynamic because window can grow or sink
 	 * 
-	 * we will crete a hapmap we use this hapmap to map char and it's index
-	 * once hashmap size reach k+1 we start slinking it
+	 * we will create a hashMAP we use this hashMAP to map char and it's index
+	 * once hashMAP size reach k+1 we start sink it
 	 * 
 	 * and also keep track of maximum repeating letter
 	 * 
@@ -51,10 +51,10 @@ public class Pattern7 {
 			}
 			maxlength = Math.max(maxlength, endWindow-starWindow+1);
 		}
-		
-		
+
+
 		return maxlength;
-		
+
 	}
 
 }
